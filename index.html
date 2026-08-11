@@ -1,0 +1,1224 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Landing page moderna con estilo Glassmorphism"
+    />
+    <title>PORTAFOLIO JS</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+    />
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="img/logos/LOG25.png" />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css" />
+
+    <!-- Phosphor Icons: Una librería moderna, ligera y minimalista ideal para interfaces elegantes (CDN) -->
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+
+    <!-- Google Fonts: Outfit -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Contenedor del fondo animado con la imagen -->
+    <div class="background-container"></div>
+
+    <!-- Capa de partículas flotantes animadas por JS (Parallax) -->
+    <div class="background-particles" id="particles-container">
+      <div
+        class="particle"
+        data-speed="0.6"
+        data-direction="-1"
+        style="top: 15%; left: 10%; width: 150px; height: 150px; opacity: 0.15"
+      ></div>
+      <div
+        class="particle"
+        data-speed="1.2"
+        data-direction="1"
+        style="top: 35%; left: 75%; width: 250px; height: 250px; opacity: 0.1"
+      ></div>
+      <div
+        class="particle"
+        data-speed="0.4"
+        data-direction="-1"
+        style="top: 60%; left: 20%; width: 120px; height: 120px; opacity: 0.12"
+      ></div>
+      <div
+        class="particle"
+        data-speed="1.5"
+        data-direction="1"
+        style="top: 80%; left: 85%; width: 180px; height: 180px; opacity: 0.08"
+      ></div>
+      <div
+        class="particle"
+        data-speed="0.8"
+        data-direction="-0.5"
+        style="top: 25%; left: 85%; width: 90px; height: 90px; opacity: 0.18"
+      ></div>
+      <div
+        class="particle"
+        data-speed="1.0"
+        data-direction="0.8"
+        style="top: 75%; left: 5%; width: 200px; height: 200px; opacity: 0.14"
+      ></div>
+    </div>
+
+    <!-- Navegación Sticky / Flotante -->
+    <header class="glass-header sticky-header">
+      <div class="scroll-progress-line"></div>
+      <div class="logo">
+        <img class="icon-log" src="img/logos/LOG23.png" alt="" />
+      </div>
+      <nav class="glass-nav">
+        <ul>
+          <li><a href="#inicio" class="active">Inicio</a></li>
+          <li><a href="#caracteristicas">Sobre Mí</a></li>
+          <li><a href="#servicios">Servicios</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+          <li><i class="ph ph-user-circle"></i></li>
+          <li>
+            <a href=""><i class="ph ph-magnifying-glass"></i></a>
+          </li>
+        </ul>
+      </nav>
+      <a class="glass-btn primary" href="https://wa.me/573223518311">
+        Hablemos
+      </a>
+    </header>
+
+    <!-- Contenedor de contenido scrollable -->
+    <main class="content-wrapper">
+      <!-- Sección 1: Hero (Inicio) -->
+      <section id="inicio" class="hero-section glass-section reveal reveal-up">
+        <!-- Video de fondo para el Hero -->
+        <video class="hero-video-bg" autoplay loop muted playsinline>
+          <source
+            src="videos/L_Prolonga_un_poco_mas_el_mo.mp4"
+            type="video/mp4"
+          />
+        </video>
+        <!-- Overlay oscuro semi-transparente para mejorar contraste del texto -->
+
+        <div class="hero">
+          <div class="hero-content reveal reveal-left stagger-1">
+            <h1>Diseñando el <span>Futuro</span></h1>
+            <p>
+              Descubre todo lo nuevo en materia de diseño gráfico y la creación
+              de narrativas visuales de alto impacto y valor
+            </p>
+            <div class="hero-actions">
+              <button class="glass-btn primary">
+                <i class="ph ph-rocket"></i> Explorar
+              </button>
+              <button class="glass-btn secondary">
+                <i class="ph ph-play-circle"></i> Ver Demo
+              </button>
+            </div>
+          </div>
+
+          <div class="hero-cards reveal reveal-right stagger-2">
+            <div class="glass-card tilt-card">
+              <i class="ph ph-chart-polar card-icon"></i>
+              <h3>Visualización</h3>
+              <p>
+                Contenido que nuca pasa desapercibido y genera conexiones únicas
+              </p>
+            </div>
+            <div class="glass-card tilt-card">
+              <i class="ph ph-sparkle card-icon"></i>
+              <h3>Estética</h3>
+              <p>
+                Dinamismo y elegancia en cada detalle, para hacer de tu idea un
+                universo.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+      <!-- Sección 2: Profile Designer -->
+      <section
+        id="profile-designer"
+        class="jc-profile-section reveal reveal-up"
+      >
+        <div class="jc-profile-card">
+          <!-- Columna 1: foto con marco tipo marcador + tags + logo -->
+          <div class="jc-profile-photo-col reveal reveal-left stagger-1">
+            <div class="jc-profile-tags">
+              <span class="jc-tag jc-tag-1">Diseño</span>
+              <span class="jc-tag jc-tag-2">Desarrollo</span>
+            </div>
+            <div class="jc-profile-photo-frame">
+              <img
+                src="img/profile-designer.png"
+                alt="Jhohan Cortes, diseñador y desarrollador"
+              />
+            </div>
+            <div class="jc-profile-logo">
+              <span>jhohan</span>
+              <span>cortes</span>
+              <small>design &amp; dev studio</small>
+            </div>
+          </div>
+
+          <!-- Columna 2: encabezado + bio + polaroids de proceso -->
+          <div class="jc-profile-main reveal reveal-up stagger-2">
+            <div class="jc-profile-header">
+              <h2>¡Hola! Soy <span class="jc-accent">Jhohan</span> Cortes</h2>
+              <span class="jc-stamp">Hecho por Jhohan</span>
+            </div>
+
+            <div class="jc-profile-bio">
+              <p>
+                No importa si es en el trabajo, estudiando o en mi tiempo libre,
+                siempre estoy diseñando o programando algo.
+                <strong
+                  >Amo el diseño, escribir código limpio, tomar fotos y aprender
+                  herramientas nuevas.</strong
+                >
+              </p>
+              <p>
+                Soy diseñador y desarrollador de software. Me dedico a crear
+                marcas y productos digitales, y aunque cada proyecto es
+                distinto,
+                <strong
+                  >siempre busco unir una buena idea con una ejecución
+                  cuidada</strong
+                >, desde el primer boceto hasta la última línea de código.
+              </p>
+            </div>
+
+            <div class="jc-profile-polaroids">
+              <figure class="jc-polaroid jc-polaroid-1">
+                <img
+                  src="img/Captura de pantalla 2026-08-10 193124.png"
+                  alt="Boceto de un proyecto de Jhohan"
+                />
+              </figure>
+              <figure class="jc-polaroid jc-polaroid-2">
+                <img
+                  src="img/profile-proceso-2.jpg"
+                  alt="Proceso creativo de Jhohan"
+                />
+                <figcaption>proceso</figcaption>
+              </figure>
+              <figure class="jc-polaroid jc-polaroid-3">
+                <img src="img/profile-proceso-3.jpg" alt="Jhohan programando" />
+                <figcaption>code</figcaption>
+              </figure>
+            </div>
+          </div>
+
+          <!-- Columna 4: estudios, enfoque y herramientas -->
+          <div class="jc-profile-aside reveal reveal-right stagger-4">
+            <div class="jc-aside-block">
+              <h3>Estudios</h3>
+              <div class="jc-study">
+                <span class="jc-study-year">2023</span>
+                <div>
+                  <strong
+                    >Técnico en Integración de Contenidos Digitales</strong
+                  >
+                  <span>SENA</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="jc-aside-block">
+              <h3>Enfoque</h3>
+              <ul class="jc-focus-list">
+                <li><i class="ph ph-code"></i> Desarrollo Web</li>
+                <li><i class="ph ph-palette"></i> Branding</li>
+                <li><i class="ph ph-device-mobile"></i> Apps móviles</li>
+                <li><i class="ph ph-share-network"></i> Redes Sociales</li>
+              </ul>
+            </div>
+
+            <div class="jc-aside-block">
+              <h3>Herramientas</h3>
+              <div class="jc-tools-row">
+                <img
+                  src="img/favicons/fav_ai.png"
+                  alt="Illustrator"
+                  title="Illustrator"
+                />
+                <img
+                  src="img/favicons/fav_ps.png"
+                  alt="Photoshop"
+                  title="Photoshop"
+                />
+                <img
+                  src="img/favicons/fav_ae.png"
+                  alt="After Effects"
+                  title="After Effects"
+                />
+                <img src="img/favicons/fav_fig.png" alt="Figma" title="Figma" />
+                <img
+                  src="img/favicons/fav_pr.png"
+                  alt="Premiere"
+                  title="Premiere"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div class="loopbranding glass-section-video reveal reveal-scale">
+        <video src="videos/loopdejs.mp4" autoplay loop muted></video>
+      </div>
+
+      <!-- Sección 3: Branding -->
+      <section
+        id="servicios"
+        class="services-section glass-section reveal reveal-up"
+        data-brand="kaizen"
+      >
+        <div class="services-layout">
+          <div class="service-main reveal reveal-left stagger-1">
+            <button class="glass-btn primary small-btn">Branding</button>
+            <h3>Proyecto 1 / Tienda de Articulos Deportivos</h3>
+            <img
+              src="img/logos/kaizen_prin.png"
+              alt="Logo Kaizen"
+              width="75%"
+            />
+            <p>
+              Kaizen es una marca que apoya a escuelas de formación de futbol
+              profesional a integrar una identidad clara que permita resaltar el
+              crecimiento en materia de talento joven, cultura y apropiación del
+              deporte local, permitinedo generar confianza en comunidades como
+              barrios y asocioaciones que aporten de forma positiva a los
+              proyectos deportivos y carreras profesionales de las nuevas
+              generaciones.
+            </p>
+            <div class="service-tools">
+              <h3>Herramientas utilizadas</h3>
+              <div class="fav-tools">
+                <img
+                  src="img/favicons/fav_ai.png"
+                  alt="Illustrator"
+                  title="Adobe Illustrator"
+                />
+                <img
+                  src="img/favicons/fav_ps.png"
+                  alt="Photoshop"
+                  title="Adobe Photoshop"
+                />
+                <img
+                  src="img/favicons/fav_pr.png"
+                  alt="Premiere"
+                  title="Adobe Premiere"
+                />
+                <img
+                  src="img/favicons/fav_ae.png"
+                  alt="After Effects"
+                  title="Adobe After Effects"
+                />
+                <img src="img/favicons/fav_fig.png" alt="Figma" title="Figma" />
+              </div>
+              <div class="colors-kaizen">
+                <h3>Paleta de colores</h3>
+                <div class="group-colors-kaizen">
+                  <div
+                    class="colork"
+                    style="background-color: #f7f7f7"
+                    title="Blanco Purificado #F7F7F7"
+                    data-color="#f7f7f7"
+                  ></div>
+                  <div
+                    class="colork"
+                    style="background-color: #45ebc0"
+                    title="Turquesa Neón #45EBC0"
+                    data-color="#45ebc0"
+                  ></div>
+                  <div
+                    class="colork"
+                    style="background-color: #3de9eb"
+                    title="Cian Eléctrico #3DE9EB"
+                    data-color="#3de9eb"
+                  ></div>
+                  <div
+                    class="colork"
+                    style="background-color: #1d3354"
+                    title="Azul Profundo #1D3354"
+                    data-color="#1d3354"
+                  ></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="service-main img-merch-kaizen">
+            <img
+              src="img/kaizen_merch-Photoroom.png"
+              alt="Kaizen Merch"
+              width="900px"
+            />
+          </div>
+        </div>
+      </section>
+
+      <section
+        id="proyecto-dulce-amor"
+        class="services-section glass-section reveal reveal-up"
+        data-brand="dulce-amor"
+        style="background-color: rgba(247, 247, 247) !important"
+      >
+        <div class="services-layout">
+          <div class="service-main reveal reveal-left stagger-1">
+            <button
+              class="glass-btn primary small-btn"
+              style="color: #0e0d0d; border: 1px solid #0e0d0d"
+            >
+              Branding
+            </button>
+            <h3 style="color: #0e0d0d">Proyecto 2 / Cafeteria</h3>
+            <img
+              src="img/logos/dulce_amor_log_prin.png"
+              alt="Logo Dulce Amor"
+              width="75%"
+            />
+            <p style="color: #0e0d0d">
+              Dulce Amor es un emprendimiento enriquecedor por sus grandes
+              tradiciones en el arte culinario, preparación de productos de
+              forma artesanal logrando encontrar sabores únicos y saludables,
+              creando experiencias inolvidables y brindarles a sus clientes
+              momentos dulces y agradables para salir de la rutina y degustar
+              productos nuevos listos para embalsamar el paladar.
+            </p>
+            <div class="service-tools">
+              <h3 style="color: #1d1c1c">Herramientas utilizadas</h3>
+              <div class="fav-tools">
+                <img
+                  src="img/favicons/fav_ai.png"
+                  alt="Illustrator"
+                  title="Adobe Illustrator"
+                />
+                <img
+                  src="img/favicons/fav_ps.png"
+                  alt="Photoshop"
+                  title="Adobe Photoshop"
+                />
+                <img
+                  src="img/favicons/fav_pr.png"
+                  alt="Premiere"
+                  title="Adobe Premiere"
+                />
+                <img
+                  src="img/favicons/fav_ae.png"
+                  alt="After Effects"
+                  title="Adobe After Effects"
+                />
+                <img src="img/favicons/fav_fig.png" alt="Figma" title="Figma" />
+              </div>
+              <div class="colors-d-amor">
+                <h3 style="color: #161515">Paleta de colores</h3>
+                <div class="group-colors-d-amor">
+                  <div
+                    class="colord-m"
+                    style="background-color: #3d2314"
+                    title="Café Artesanal #3D2314"
+                    data-color="#3d2314"
+                  ></div>
+                  <div
+                    class="colord-m"
+                    style="background-color: #f4c2c2"
+                    title="Rosa Pastel #F4C2C2"
+                    data-color="#f4c2c2"
+                  ></div>
+                  <div
+                    class="colord-m"
+                    style="background-color: #fff8e7"
+                    title="Crema Dulce #FFF8E7"
+                    data-color="#fff8e7"
+                  ></div>
+                  <div
+                    class="colord-m"
+                    style="background-color: #d4af37"
+                    title="Dorado Calido #D4AF37"
+                    data-color="#d4af37"
+                  ></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="service-main img-merch-d-amor">
+            <img
+              src="img/mockup_dulce_amor.png"
+              alt="Dulce Amor Mockup"
+              width="920px"
+            />
+          </div>
+        </div>
+      </section>
+
+      <section
+        id="proyecto-nexo"
+        class="services-section glass-section reveal reveal-up"
+        data-brand="nexo"
+        style="background-color: #f24a41; backdrop-filter: blur(24px)"
+      >
+        <div class="services-layout">
+          <div class="service-main reveal reveal-left stagger-1">
+            <button
+              class="glass-btn primary small-btn"
+              style="color: #f7f7f7; border: 1px solid #f7f7f7"
+            >
+              Branding
+            </button>
+            <h3 style="color: #f7f7f7">
+              Proyecto 3 / Productora Creativa Audiovisual
+            </h3>
+            <img
+              src="img/logos/nexo_visual_logo_hor.png"
+              alt="Nexo Visual Logo"
+              width="75%"
+            />
+            <p style="color: #f7f7f7">
+              Nexo Visual es una productora creativa audiovisual especializada
+              en la creación <br />
+              de contenido innovador y de alta calidad para plataformas
+              digitales y medios tradicionales. <br />La marca nace con el
+              propósito de transformar ideas en experiencias visuales que
+              conecten<br />
+              con las audiencias y generen un impacto significativo a través de
+              la creatividad,<br />
+              la narrativa conceptual y la comunicación audiovisual.
+            </p>
+            <div class="service-tools">
+              <h3 style="color: #f7f7f7">Herramientas utilizadas</h3>
+              <div class="fav-tools">
+                <img
+                  src="img/favicons/fav_ai.png"
+                  alt="Illustrator"
+                  title="Adobe Illustrator"
+                />
+                <img
+                  src="img/favicons/fav_ps.png"
+                  alt="Photoshop"
+                  title="Adobe Photoshop"
+                />
+                <img
+                  src="img/favicons/fav_pr.png"
+                  alt="Premiere"
+                  title="Adobe Premiere"
+                />
+                <img
+                  src="img/favicons/fav_ae.png"
+                  alt="After Effects"
+                  title="Adobe After Effects"
+                />
+                <img src="img/favicons/fav_fig.png" alt="Figma" title="Figma" />
+              </div>
+              <div class="color-box-nexo">
+                <h3 style="color: #f7f7f7">Paleta de colores</h3>
+                <div class="group-colors-nexo">
+                  <div
+                    class="color-nexo"
+                    style="background-color: #ed6658"
+                    title="Coral Vivo #ED6658"
+                    data-color="#ed6658"
+                  ></div>
+                  <div
+                    class="color-nexo"
+                    style="background-color: #545354"
+                    title="Gris Grafito #545354"
+                    data-color="#545354"
+                  ></div>
+                  <div
+                    class="color-nexo"
+                    style="background-color: #d9c6a5"
+                    title="Arena Calida #D9C6A5"
+                    data-color="#d9c6a5"
+                  ></div>
+                  <div
+                    class="color-nexo"
+                    style="background-color: #f2efea"
+                    title="Blanco Marfil #F2EFEA"
+                    data-color="#f2efea"
+                  ></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="service-main img-merch-nexo">
+            <img
+              src="img/prototipo-nexo.png"
+              alt="Nexo Visual Production Mockup"
+              width="920px"
+            />
+          </div>
+        </div>
+      </section>
+
+      <div class="loopbranding glass-section-video reveal reveal-scale">
+        <video src="videos/LoopFoto.mp4" autoplay loop muted></video>
+      </div>
+
+      <section class="gallery-premium" id="galeria-fotomontajes">
+        <div class="gallery-scanline"></div>
+
+        <div class="gallery-intro">
+          <span class="gallery-eyebrow reveal-el" style="--i: 0"
+            >Colección 2026</span
+          >
+          <h2 class="gallery-title reveal-el" style="--i: 1"></h2>
+          <p class="gallery-sub reveal-el" style="--i: 2">
+            Cuatro composiciones seleccionadas de la serie. Desliza, arrastra o
+            usa las flechas para recorrer la galería.
+          </p>
+        </div>
+
+        <div class="plate-swiper swiper reveal-el" style="--i: 3">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <article class="gold-card">
+                <div class="card-header-badge">
+                  <span class="rarity-tag epic"
+                    ><i class="ph ph-star-fill"></i> ÉPICA 5★</span
+                  >
+                  <span class="card-level">LVL 99</span>
+                </div>
+                <div class="card-image-wrapper">
+                  <img
+                    src="img/fotomontaje/composición-fotomontaje-final.jpg"
+                    alt="Composición Fotomontaje Final"
+                    loading="lazy"
+                  />
+                  <div class="gold-shimmer-sweep"></div>
+                  <div class="sparkles-container">
+                    <span class="sparkle s1">✦</span>
+                    <span class="sparkle s2">✧</span>
+                    <span class="sparkle s3">✦</span>
+                  </div>
+                </div>
+                <div class="card-footer">
+                  <h4 class="card-title">Avengers Champions League</h4>
+                  <div class="card-stats">
+                    <span
+                      ><i class="ph ph-lightning"></i> Arte Audiovisual</span
+                    >
+                    <span class="power-rating">100% FX</span>
+                  </div>
+                </div>
+              </article>
+            </div>
+
+            <div class="swiper-slide">
+              <article class="gold-card">
+                <div class="card-header-badge">
+                  <span class="rarity-tag legendary"
+                    ><i class="ph ph-crown"></i> LEGENDARIA</span
+                  >
+                  <span class="card-level">LVL MAX</span>
+                </div>
+                <div class="card-image-wrapper">
+                  <img
+                    src="img/fotomontaje/DESENLAZADOS-_2_.jpg"
+                    alt="Desenlazados Fotomontaje"
+                    loading="lazy"
+                  />
+                  <div class="gold-shimmer-sweep"></div>
+                  <div class="sparkles-container">
+                    <span class="sparkle s1">✦</span>
+                    <span class="sparkle s2">✧</span>
+                    <span class="sparkle s3">✦</span>
+                  </div>
+                </div>
+                <div class="card-footer">
+                  <h4 class="card-title">GLITCHED</h4>
+                  <div class="card-stats">
+                    <span
+                      ><i class="ph ph-sparkle"></i> Edición Conceptual</span
+                    >
+                    <span class="power-rating">98% FX</span>
+                  </div>
+                </div>
+              </article>
+            </div>
+
+            <div class="swiper-slide">
+              <article class="gold-card">
+                <div class="card-header-badge">
+                  <span class="rarity-tag mythical"
+                    ><i class="ph ph-planet"></i> MÍTICA</span
+                  >
+                  <span class="card-level">LVL 99</span>
+                </div>
+                <div class="card-image-wrapper">
+                  <img
+                    src="img/fotomontaje/SERESDEOTROMUNDO.jpg"
+                    alt="Seres de Otro Mundo"
+                    loading="lazy"
+                  />
+                  <div class="gold-shimmer-sweep"></div>
+                  <div class="sparkles-container">
+                    <span class="sparkle s1">✦</span>
+                    <span class="sparkle s2">✧</span>
+                    <span class="sparkle s3">✦</span>
+                  </div>
+                </div>
+                <div class="card-footer">
+                  <h4 class="card-title">Seres de Otro Mundo</h4>
+                  <div class="card-stats">
+                    <span><i class="ph ph-alien"></i> VFX Fantasía</span>
+                    <span class="power-rating">99% FX</span>
+                  </div>
+                </div>
+              </article>
+            </div>
+
+            <div class="swiper-slide">
+              <article class="gold-card">
+                <div class="card-header-badge">
+                  <span class="rarity-tag chromatic"
+                    ><i class="ph ph-diamonds-four"></i> CROMÁTICA</span
+                  >
+                  <span class="card-level">ULTRA</span>
+                </div>
+                <div class="card-image-wrapper">
+                  <img
+                    src="img/fotomontaje/UNFESTINDEORO.jpg"
+                    alt="Un Festín de Oro"
+                    loading="lazy"
+                  />
+                  <div class="gold-shimmer-sweep"></div>
+                  <div class="sparkles-container">
+                    <span class="sparkle s1">✦</span>
+                    <span class="sparkle s2">✧</span>
+                    <span class="sparkle s3">✦</span>
+                  </div>
+                </div>
+                <div class="card-footer">
+                  <h4 class="card-title">Un Festín de Oro</h4>
+                  <div class="card-stats">
+                    <span><i class="ph ph-trophy"></i> Master Composition</span>
+                    <span class="power-rating">100% GOLD</span>
+                  </div>
+                </div>
+              </article>
+            </div>
+            <div class="swiper-slide">
+              <article class="gold-card">
+                <div class="card-header-badge">
+                  <span class="rarity-tag chromatic"
+                    ><i class="ph ph-diamonds-four"></i> CROMÁTICA</span
+                  >
+                  <span class="card-level">ULTRA</span>
+                </div>
+                <div class="card-image-wrapper">
+                  <img
+                    src="img/fotomontaje/Amapola.jpeg"
+                    alt="Un Festín de Oro"
+                    loading="lazy"
+                  />
+                  <div class="gold-shimmer-sweep"></div>
+                  <div class="sparkles-container">
+                    <span class="sparkle s1">✦</span>
+                    <span class="sparkle s2">✧</span>
+                    <span class="sparkle s3">✦</span>
+                  </div>
+                </div>
+                <div class="card-footer">
+                  <h4 class="card-title">Amapola</h4>
+                  <div class="card-stats">
+                    <span><i class="ph ph-trophy"></i> Master Composition</span>
+                    <span class="power-rating">100% GOLD</span>
+                  </div>
+                </div>
+              </article>
+            </div>
+            <div class="swiper-slide">
+              <article class="gold-card">
+                <div class="card-header-badge">
+                  <span class="rarity-tag epic"
+                    ><i class="ph ph-star-fill"></i> ÉPICA 5★</span
+                  >
+                  <span class="card-level">LVL 99</span>
+                </div>
+                <div class="card-image-wrapper">
+                  <img
+                    src="img/fotomontaje/composición-fotomontaje-final.jpg"
+                    alt="Composición Fotomontaje Final"
+                    loading="lazy"
+                  />
+                  <div class="gold-shimmer-sweep"></div>
+                  <div class="sparkles-container">
+                    <span class="sparkle s1">✦</span>
+                    <span class="sparkle s2">✧</span>
+                    <span class="sparkle s3">✦</span>
+                  </div>
+                </div>
+                <div class="card-footer">
+                  <h4 class="card-title">Avengers Champions League</h4>
+                  <div class="card-stats">
+                    <span
+                      ><i class="ph ph-lightning"></i> Arte Audiovisual</span
+                    >
+                    <span class="power-rating">100% FX</span>
+                  </div>
+                </div>
+              </article>
+            </div>
+
+            <div class="swiper-slide">
+              <article class="gold-card">
+                <div class="card-header-badge">
+                  <span class="rarity-tag legendary"
+                    ><i class="ph ph-crown"></i> LEGENDARIA</span
+                  >
+                  <span class="card-level">LVL MAX</span>
+                </div>
+                <div class="card-image-wrapper">
+                  <img
+                    src="img/fotomontaje/DESENLAZADOS-_2_.jpg"
+                    alt="Desenlazados Fotomontaje"
+                    loading="lazy"
+                  />
+                  <div class="gold-shimmer-sweep"></div>
+                  <div class="sparkles-container">
+                    <span class="sparkle s1">✦</span>
+                    <span class="sparkle s2">✧</span>
+                    <span class="sparkle s3">✦</span>
+                  </div>
+                </div>
+                <div class="card-footer">
+                  <h4 class="card-title">Desenlazados</h4>
+                  <div class="card-stats">
+                    <span
+                      ><i class="ph ph-sparkle"></i> Edición Conceptual</span
+                    >
+                    <span class="power-rating">98% FX</span>
+                  </div>
+                </div>
+              </article>
+            </div>
+
+            <div class="swiper-slide">
+              <article class="gold-card">
+                <div class="card-header-badge">
+                  <span class="rarity-tag mythical"
+                    ><i class="ph ph-planet"></i> MÍTICA</span
+                  >
+                  <span class="card-level">LVL 99</span>
+                </div>
+                <div class="card-image-wrapper">
+                  <img
+                    src="img/fotomontaje/SERESDEOTROMUNDO.jpg"
+                    alt="Seres de Otro Mundo"
+                    loading="lazy"
+                  />
+                  <div class="gold-shimmer-sweep"></div>
+                  <div class="sparkles-container">
+                    <span class="sparkle s1">✦</span>
+                    <span class="sparkle s2">✧</span>
+                    <span class="sparkle s3">✦</span>
+                  </div>
+                </div>
+                <div class="card-footer">
+                  <h4 class="card-title">Seres de Otro Mundo</h4>
+                  <div class="card-stats">
+                    <span><i class="ph ph-alien"></i> VFX Fantasía</span>
+                    <span class="power-rating">99% FX</span>
+                  </div>
+                </div>
+              </article>
+            </div>
+
+            <div class="swiper-slide">
+              <article class="gold-card">
+                <div class="card-header-badge">
+                  <span class="rarity-tag chromatic"
+                    ><i class="ph ph-diamonds-four"></i> CROMÁTICA</span
+                  >
+                  <span class="card-level">ULTRA</span>
+                </div>
+                <div class="card-image-wrapper">
+                  <img
+                    src="img/fotomontaje/UNFESTINDEORO.jpg"
+                    alt="Un Festín de Oro"
+                    loading="lazy"
+                  />
+                  <div class="gold-shimmer-sweep"></div>
+                  <div class="sparkles-container">
+                    <span class="sparkle s1">✦</span>
+                    <span class="sparkle s2">✧</span>
+                    <span class="sparkle s3">✦</span>
+                  </div>
+                </div>
+                <div class="card-footer">
+                  <h4 class="card-title">Un Festín de Oro</h4>
+                  <div class="card-stats">
+                    <span><i class="ph ph-trophy"></i> Master Composition</span>
+                    <span class="power-rating">100% GOLD</span>
+                  </div>
+                </div>
+              </article>
+            </div>
+            <div class="swiper-slide">
+              <article class="gold-card">
+                <div class="card-header-badge">
+                  <span class="rarity-tag chromatic"
+                    ><i class="ph ph-diamonds-four"></i> CROMÁTICA</span
+                  >
+                  <span class="card-level">ULTRA</span>
+                </div>
+                <div class="card-image-wrapper">
+                  <img
+                    src="img/fotomontaje/Amapola.jpeg"
+                    alt="Un Festín de Oro"
+                    loading="lazy"
+                  />
+                  <div class="gold-shimmer-sweep"></div>
+                  <div class="sparkles-container">
+                    <span class="sparkle s1">✦</span>
+                    <span class="sparkle s2">✧</span>
+                    <span class="sparkle s3">✦</span>
+                  </div>
+                </div>
+                <div class="card-footer">
+                  <h4 class="card-title">Amapola</h4>
+                  <div class="card-stats">
+                    <span><i class="ph ph-trophy"></i> Master Composition</span>
+                    <span class="power-rating">100% GOLD</span>
+                  </div>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+
+        <div class="gallery-controls reveal-el" style="--i: 4">
+          <button
+            class="plate-nav prev"
+            id="plate-prev"
+            aria-label="Pieza anterior"
+          >
+            <i class="ph ph-caret-left"></i>
+          </button>
+          <div class="gallery-progress">
+            <div class="gallery-progress-fill" id="gallery-progress-fill"></div>
+          </div>
+          <button
+            class="plate-nav next"
+            id="plate-next"
+            aria-label="Pieza siguiente"
+          >
+            <i class="ph ph-caret-right"></i>
+          </button>
+        </div>
+        <div class="desktop">
+          <img src="img/eleven-bite y jhohan viendo tele.png" alt="" />
+        </div>
+      </section>
+
+      <div class="loopbranding glass-section-video reveal reveal-scale">
+        <video src="videos/LoopAudiovisual.mp4" autoplay loop muted></video>
+      </div>
+
+      
+
+      <!-- Sección 4: Contacto (Footer/CTA) -->
+      <section
+        id="contacto"
+        class="contact-section glass-section reveal reveal-up"
+      >
+        <div class="contact-card tilt-card reveal reveal-scale stagger-1">
+          <h2>¿Listo para <span>Comenzar</span>?</h2>
+          <p>
+            Escríbenos para agendar una demostración o resolver tus dudas. La
+            innovación te espera.
+          </p>
+          <form class="glass-form" onsubmit="event.preventDefault()">
+            <div class="form-group">
+              <input
+                type="email"
+                placeholder="Tu correo electrónico"
+                required
+                class="glass-input"
+              />
+              <button type="submit" class="glass-btn primary form-btn">
+                Enviar
+              </button>
+            </div>
+          </form>
+        </div>
+        <footer class="glass-footer-content">
+          <p>
+            &copy; 2026 Glassify Inc. Todos los derechos reservados. Diseñado
+            con pasión.
+          </p>
+        </footer>
+      </section>
+    </main>
+
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/carouselvid.js"></script>
+
+    <!-- Motor de Animación L99 UX/UI (Lerp, Scroll Reveal, 3D Tilt & Micro-Interactions) -->
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        let currentScroll = 0;
+        let targetScroll = 0;
+        const ease = 0.08; // Coeficiente Lerp (ultra suave)
+
+        // 1. IntersectionObserver para Revelado por Scroll (Scroll Reveal)
+        const revealObserver = new IntersectionObserver(
+          (entries) => {
+            entries.forEach((entry) => {
+              if (entry.isIntersecting) {
+                entry.target.classList.add("is-visible");
+              }
+            });
+          },
+          {
+            threshold: 0.12,
+            rootMargin: "0px 0px -40px 0px",
+          },
+        );
+
+        document
+          .querySelectorAll(".reveal")
+          .forEach((el) => revealObserver.observe(el));
+
+        // 2. Motor 3D Tilt y Destello Especular en Tarjetas y Mockups (.tilt-card)
+        const tiltCards = document.querySelectorAll(".tilt-card");
+        tiltCards.forEach((card) => {
+          card.addEventListener("mousemove", (e) => {
+            const rect = card.getBoundingClientRect();
+            const x = e.clientX - rect.left;
+            const y = e.clientY - rect.top;
+
+            const centerX = rect.width / 2;
+            const centerY = rect.height / 2;
+
+            const rotateX = ((y - centerY) / centerY) * -10;
+            const rotateY = ((x - centerX) / centerX) * 10;
+
+            const mouseXPct = (x / rect.width) * 100;
+            const mouseYPct = (y / rect.height) * 100;
+
+            card.style.transform = `perspective(1000px) rotateX(${rotateX}deg) rotateY(${rotateY}deg) scale3d(1.02, 1.02, 1)`;
+            card.style.setProperty("--mouse-x", `${mouseXPct}%`);
+            card.style.setProperty("--mouse-y", `${mouseYPct}%`);
+          });
+
+          card.addEventListener("mouseleave", () => {
+            card.style.transform =
+              "perspective(1000px) rotateX(0deg) rotateY(0deg) scale3d(1, 1, 1)";
+          });
+        });
+
+        // 3. Monitoreo de Scroll y Navegación Activa
+        window.addEventListener(
+          "scroll",
+          () => {
+            const scrollTop =
+              window.pageYOffset || document.documentElement.scrollTop;
+            const docHeight =
+              document.documentElement.scrollHeight - window.innerHeight;
+            targetScroll = docHeight > 0 ? scrollTop / docHeight : 0;
+
+            // Actualizar resaltado de menú
+            const sections = document.querySelectorAll("section[id]");
+            let currentSectionId = "";
+            sections.forEach((section) => {
+              const sectionTop = section.offsetTop - 220;
+              if (window.scrollY >= sectionTop) {
+                currentSectionId = section.getAttribute("id");
+              }
+            });
+
+            if (currentSectionId) {
+              document.querySelectorAll(".glass-nav a").forEach((a) => {
+                a.classList.remove("active");
+                if (
+                  a.getAttribute("href") === `#${currentSectionId}` ||
+                  (currentSectionId.startsWith("proyecto-") &&
+                    a.getAttribute("href") === "#servicios") ||
+                  (currentSectionId === "fotomontajes" &&
+                    a.getAttribute("href") === "#servicios")
+                ) {
+                  a.classList.add("active");
+                }
+              });
+            }
+          },
+          { passive: true },
+        );
+
+        // 5. Lógica de la Baraja 3D de Cartas Fotomontaje (Clash Royale / Brawl Stars Style)
+        function initCardDeck() {
+          const deck = document.getElementById("fotomontaje-deck");
+          if (!deck) return;
+
+          const cards = Array.from(deck.querySelectorAll(".gold-card"));
+          const dots = Array.from(
+            document.querySelectorAll("#deck-pagination .page-dot"),
+          );
+          const prevBtn = document.getElementById("deck-prev-btn");
+          const nextBtn = document.getElementById("deck-next-btn");
+          let currentIndex = 0;
+          const totalCards = cards.length;
+          let isAnimating = false;
+
+          function updateDeck(newIndex) {
+            if (isAnimating) return;
+            isAnimating = true;
+
+            currentIndex = (newIndex + totalCards) % totalCards;
+
+            cards.forEach((card, i) => {
+              card.classList.remove("active", "next", "prev", "stacked-back");
+
+              const diff = (i - currentIndex + totalCards) % totalCards;
+
+              if (diff === 0) {
+                card.classList.add("active");
+              } else if (diff === 1) {
+                card.classList.add("next");
+              } else if (diff === totalCards - 1) {
+                card.classList.add("prev");
+              } else {
+                card.classList.add("stacked-back");
+              }
+            });
+
+            dots.forEach((dot, i) => {
+              dot.classList.toggle("active", i === currentIndex);
+            });
+
+            setTimeout(() => {
+              isAnimating = false;
+            }, 400);
+          }
+
+          // Eventos Click en Botones
+          if (prevBtn)
+            prevBtn.addEventListener("click", () =>
+              updateDeck(currentIndex - 1),
+            );
+          if (nextBtn)
+            nextBtn.addEventListener("click", () =>
+              updateDeck(currentIndex + 1),
+            );
+
+          // Click en Dots de Paginación
+          dots.forEach((dot, i) => {
+            dot.addEventListener("click", () => updateDeck(i));
+          });
+
+          // Click directo en cualquier carta para traerla al frente
+          cards.forEach((card, i) => {
+            card.addEventListener("click", () => {
+              if (i !== currentIndex) {
+                updateDeck(i);
+              }
+            });
+          });
+
+          // Navegación por Scroll Wheel sobre la baraja
+          let wheelCooldown = false;
+          deck.addEventListener(
+            "wheel",
+            (e) => {
+              e.preventDefault();
+              if (wheelCooldown) return;
+
+              if (e.deltaY > 0 || e.deltaX > 0) {
+                updateDeck(currentIndex + 1);
+              } else if (e.deltaY < 0 || e.deltaX < 0) {
+                updateDeck(currentIndex - 1);
+              }
+
+              wheelCooldown = true;
+              setTimeout(() => {
+                wheelCooldown = false;
+              }, 350);
+            },
+            { passive: false },
+          );
+
+          // Soporte para Arrastre (Drag / Touch Swipe)
+          let startX = 0;
+          let isDragging = false;
+
+          const handleStart = (x) => {
+            startX = x;
+            isDragging = true;
+          };
+
+          const handleEnd = (x) => {
+            if (!isDragging) return;
+            isDragging = false;
+            const diffX = x - startX;
+            if (Math.abs(diffX) > 35) {
+              if (diffX < 0) {
+                updateDeck(currentIndex + 1);
+              } else {
+                updateDeck(currentIndex - 1);
+              }
+            }
+          };
+
+          deck.addEventListener("mousedown", (e) => handleStart(e.clientX));
+          window.addEventListener("mouseup", (e) => handleEnd(e.clientX));
+
+          deck.addEventListener(
+            "touchstart",
+            (e) => handleStart(e.touches[0].clientX),
+            { passive: true },
+          );
+          deck.addEventListener("touchend", (e) =>
+            handleEnd(e.changedTouches[0].clientX),
+          );
+
+          // Inicializar primera carta
+          updateDeck(0);
+        }
+
+        initCardDeck();
+
+        // 4. Ciclo de Animaciones Continuas por Lerp Frame
+        function updateScrollAnimation() {
+          currentScroll += (targetScroll - currentScroll) * ease;
+          if (Math.abs(targetScroll - currentScroll) < 0.0001) {
+            currentScroll = targetScroll;
+          }
+
+          // Asignar el porcentaje suavizado al CSS
+          document.documentElement.style.setProperty(
+            "--scroll-pct",
+            currentScroll,
+          );
+
+          // Animar partículas de fondo (Parallax)
+          const particles = document.querySelectorAll(".particle");
+          particles.forEach((particle) => {
+            const speed = parseFloat(particle.dataset.speed) || 1.0;
+            const direction = parseFloat(particle.dataset.direction) || 1;
+            const translateY = currentScroll * 280 * speed * direction;
+            const rotate = currentScroll * 180 * (speed * 0.4);
+            particle.style.transform = `translateY(${translateY}px) rotate(${rotate}deg)`;
+          });
+
+          requestAnimationFrame(updateScrollAnimation);
+        }
+
+        requestAnimationFrame(updateScrollAnimation);
+      });
+    </script>
+  </body>
+</html>
