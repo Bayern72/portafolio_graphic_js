@@ -21,7 +21,7 @@ const ITEMS = [
     category: "Mini Documental",
     meta: "2026 · 6 min",
     image: "./img/frames/PostGlitched.jpg",
-    href: "./videos/audiovisuales/DOCUMENTAL REDES.MP4",
+    href: "./videos/audiovisuales/DOCUMENTAL REDES.mp4",
   },
   {
     id: "1",
@@ -45,7 +45,7 @@ const ITEMS = [
     category: "Mini Documental",
     meta: "2026 · 6 min",
     image: "./img/frames/PostGlitched.jpg",
-    href: "./videos/audiovisuales/DOCUMENTAL REDES.MP4",
+    href: "./videos/audiovisuales/DOCUMENTAL REDES.mp4",
   },
   
 ];
