@@ -84,10 +84,9 @@
           <li><a href="#caracteristicas">Sobre Mí</a></li>
           <li><a href="#servicios">Servicios</a></li>
           <li><a href="#contacto">Contacto</a></li>
-          <li><i class="ph ph-user-circle"></i></li>
-          <li>
-            <a href=""><i class="ph ph-magnifying-glass"></i></a>
+          <li><a href="login-glassmorphism.html"><i class="ph ph-user-circle"></i></a>
           </li>
+          
         </ul>
       </nav>
       <a class="glass-btn primary" href="https://wa.me/573223518311">
@@ -202,20 +201,21 @@
             <div class="jc-profile-polaroids">
               <figure class="jc-polaroid jc-polaroid-1">
                 <img
-                  src="img/Captura de pantalla 2026-08-10 193124.png"
+                  src="img/bocetando_js_f2.png"
                   alt="Boceto de un proyecto de Jhohan"
                 />
+                <figcaption>Bocetación</figcaption>
               </figure>
               <figure class="jc-polaroid jc-polaroid-2">
                 <img
-                  src="img/profile-proceso-2.jpg"
+                  src="img/Captura de pantalla 2026-08-10 193124.png"
                   alt="Proceso creativo de Jhohan"
                 />
-                <figcaption>proceso</figcaption>
+                <figcaption>Desarrollo</figcaption>
               </figure>
               <figure class="jc-polaroid jc-polaroid-3">
-                <img src="img/profile-proceso-3.jpg" alt="Jhohan programando" />
-                <figcaption>code</figcaption>
+                <img src="img/coding_js_f3.png" alt="Jhohan programando" />
+                <figcaption>Programación</figcaption>
               </figure>
             </div>
           </div>
@@ -977,6 +977,20 @@
         </footer>
       </section>
     </main>
+
+    <script>
+      (function () {
+        try {
+          const storedUser = sessionStorage.getItem('glassmorphism_auth_user');
+          if (!storedUser) {
+            window.location.href = 'login-glassmorphism.html';
+            return;
+          }
+        } catch (error) {
+          window.location.href = 'login-glassmorphism.html';
+        }
+      })();
+    </script>
 
     <script src="https://unpkg.com/@phosphor-icons/web"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>

@@ -18,7 +18,7 @@
     padding: 0;
     box-sizing: border-box;
 }body {
-    font-family: var(--font-main);
+    font-family: var(--font-main) !important;
     color: var(--text-primary)!important;
     min-height: 100vh;
     overflow-x: hidden;
@@ -850,15 +850,198 @@
     }
 }
 
+@media (max-width: 991px) {
+    .sticky-header {
+        top: 18px;
+        width: 94%;
+        padding: 1rem 1.2rem;
+    }
+
+    .glass-header {
+        border-radius: 28px;
+        gap: 1rem;
+    }
+
+    .glass-nav ul {
+        gap: 0.9rem 1.5rem;
+        font-size: 0.92rem;
+    }
+
+    .content-wrapper {
+        width: 94%;
+        margin-top: 155px;
+        gap: 3.25rem;
+    }
+
+    .glass-section {
+        min-height: auto;
+        padding: 2.2rem 1.4rem;
+        border-radius: 24px;
+    }
+
+    .hero-content h1 {
+        font-size: clamp(2.5rem, 6vw, 4rem);
+    }
+
+    .hero-actions {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .jc-profile-card {
+        grid-template-columns: 240px 1fr;
+        grid-template-areas:
+            "photo main"
+            "photo aside";
+        gap: 1.75rem 1.4rem;
+        padding: 2.2rem 1.6rem 2rem;
+    }
+
+    .jc-profile-photo-col {
+        min-width: 0;
+    }
+
+    .jc-profile-header h2 {
+        max-width: 11ch;
+    }
+
+    .jc-profile-polaroids {
+        gap: 0.9rem;
+    }
+
+    .home-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
 @media (max-width: 768px) {
+    .sticky-header {
+        width: 92%;
+        top: 12px;
+        padding: 0.95rem 1rem;
+    }
+
+    .glass-header {
+        flex-direction: column;
+        align-items: stretch;
+        border-radius: 22px;
+        gap: 0.75rem;
+        padding: 1rem 0.9rem;
+    }
+
+    .logo {
+        justify-content: center;
+    }
+
+    .glass-nav ul {
+        width: 100%;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 0.8rem 1rem;
+    }
+
+    .glass-nav a {
+        font-size: 0.88rem;
+    }
+
+    .glass-btn {
+        width: auto;
+        padding: 0.8rem 1.2rem;
+    }
+
+    .content-wrapper {
+        width: 92%;
+        margin-top: 150px;
+        gap: 2.5rem;
+    }
+
+    .glass-section {
+        padding: 1.4rem 1rem;
+        border-radius: 20px;
+    }
+
+    .hero {
+        gap: 1.8rem;
+    }
+
+    .hero-content {
+        padding: 0.6rem 0;
+    }
+
+    .hero-content h1 {
+        font-size: clamp(2.1rem, 10vw, 3.2rem);
+        line-height: 1.08;
+    }
+
+    .hero-content p {
+        font-size: 0.96rem;
+    }
+
     .hero-cards {
         flex-direction: column;
+        width: 100%;
+        gap: 1rem;
     }
-    
-    .hero-content h1 {
-        font-size: 3rem;
+
+    .glass-card {
+        min-height: 180px;
     }
-    
+
+    .jc-profile-card {
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "photo"
+            "main"
+            "aside";
+        gap: 1.5rem;
+        padding: 1.8rem 1rem 1.5rem;
+        border-radius: 22px;
+    }
+
+    .jc-profile-photo-col {
+        order: 1;
+    }
+
+    .jc-profile-main {
+        order: 2;
+    }
+
+    .jc-profile-aside {
+        order: 3;
+    }
+
+    .jc-profile-tags {
+        justify-content: center;
+    }
+
+    .jc-profile-header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .jc-profile-header h2 {
+        max-width: none;
+        font-size: clamp(1.8rem, 7vw, 2.5rem);
+    }
+
+    .jc-profile-polaroids {
+        margin-top: 0.5rem;
+    }
+
+    .jc-polaroid {
+        width: 47%;
+        min-width: 0;
+    }
+
+    .home-grid {
+        grid-template-columns: 1fr;
+        gap: 0.9rem;
+    }
+
+    .home-card {
+        padding: 1.2rem 1rem;
+    }
+
     .section-title h2 {
         font-size: 2.2rem;
     }

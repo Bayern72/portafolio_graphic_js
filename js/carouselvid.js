@@ -21,15 +21,7 @@ const ITEMS = [
     category: "Mini Documental",
     meta: "2026 · 6 min",
     image: "./img/frames/PostGlitched.jpg",
-    href: "#",
-  },
-  {
-    id: "4",
-    title: "The Long Crossing",
-    category: "Documentary",
-    meta: "Aerial unit · 2024 · 28 min",
-    image: "./img/work-4.jpg",
-    href: "#",
+    href: "./videos/audiovisuales/DOCUMENTAL REDES.MP4",
   },
   {
     id: "1",
@@ -53,15 +45,7 @@ const ITEMS = [
     category: "Mini Documental",
     meta: "2026 · 6 min",
     image: "./img/frames/PostGlitched.jpg",
-    href: "#",
-  },
-  {
-    id: "4",
-    title: "The Long Crossing",
-    category: "Documentary",
-    meta: "Aerial unit · 2024 · 28 min",
-    image: "./img/work-4.jpg",
-    href: "#",
+    href: "./videos/audiovisuales/DOCUMENTAL REDES.MP4",
   },
   
 ];
